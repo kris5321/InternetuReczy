@@ -1,0 +1,118 @@
+.value {
+  margin-left: 15px;
+}
+
+.logo {
+  background: url("assets/ki.jpg");
+  background-size: cover;
+  width: 4vh;
+  height: 4vh;
+  margin: 3px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 40px); /* Zmniejszamy szerokość o 40px dla marginesu */
+  padding: 20px;
+  background-color: #1e1e1e;
+  margin: 20px; /* Margines wokół głównej sekcji */
+}
+
+.device-status {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.main-device-status {
+  background-color: #535bf2; /* Kolor tła dla bloku Device No. 3 */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.charts {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin-top: 20px;
+}
+
+.other-devices {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+  width: calc(100% - 40px); /* Zmniejszamy szerokość o 40px dla marginesu */
+  margin-bottom: 20px; /* Dodajemy margines na dole */
+}
+
+.device-tile {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  flex: 1; /* Kafelki zajmują równomiernie całą szerokość */
+  min-width: 150px; /* Minimalna szerokość kafelka */
+  cursor: pointer;
+}
+
+.device-tile.active {
+  background-color: #535bf2;
+}
+
+.device-tile h2 {
+  color: white;
+}
+
+.device-tile p {
+  color: white;
+  margin: 0 0 0 5px; /* Dodaj margines, aby ikona i tekst były bliżej siebie */
+}
+
+.device-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.device-icon {
+  margin-right: 5px;
+}
+
+.details-button {
+  color: blue;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.details-button:hover {
+  text-decoration: none;
+}
